@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/extra.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container py-6 flex items-center justify-between flex-wrap">
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+          <img src="../images/Logo.svg" alt="" />
+        </div>
+        <div class="block lg:hidden">
+          <button
+            class="mobile-menu-button flex items-center px-3 py-2 border rounded text-black border-none hover:text-white hover:bg-salmon"
+          >
+            <svg
+              class="fill-current h-5 w-5"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="mobile-menu w-full items-center flex-col lg:justify-between lg:flex lg:items-center lg:w-auto lg:gap-10 hidden lg:flex-row border-b-2 p-4 lg:p-0 lg:border-none"
+        >
+          <div class="text-base lg:flex gap-6 text-center">
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block font-medium lg:mt-0 text-black hover:text-salmon mr-4"
+            >
+              Track Application
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block font-medium lg:mt-0 text-black hover:text-salmon mr-4"
+            >
+              Manage My Card
+            </a>
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block font-medium lg:mt-0 text-black hover:text-salmon"
+            >
+              FAQs
+            </a>
+          </div>
+          <div class="text-center">
+            <a
+              href="#"
+              class="inline-block font-bold text-white text-base px-6 py-2 rounded bg-salmon hover:text-gray-800 hover:bg-red-400 mt-4 lg:mt-0"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container my-6 lg:my-20">
+      <div class="flex flex-col items-center lg:flex-row gap-10">
+        <div class="basis-full">
+          <div class="flex flex-col items-center lg:block lg:max-w-lg mt-10 lg:mt-0">
+            <h1
+              class="text-3xl md:text-4xl lg:text-5xl mb-4 leading-snug lg:leading-snug text-center lg:text-start"
+            >
+              Build a Credit Card That is Definitely Yours
+            </h1>
+            <p
+              class="text-base lg:text-xl mb-6 leading-normal lg:leading-normal text-center lg:text-start"
+            >
+              With the OneSync Credit Card you can customise your card the way you want
+            </p>
+            <button
+              class="text-base lg:text-lg font-medium text-white bg-salmon px-10 py-2 rounded-full hover:text-gray-800 hover:bg-red-400"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div class="basis-full">
+          <img src="/images/gif.svg" alt="" class="max-w-sm lg:max-w-full" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-lavender">
+      <div class="container text-white py-6 lg:py-20 md:flex gap-8">
+        <div class="basis-6/12">
+          <div class="text-2xl lg:text-4xl">
+            <h2 class="mb-2">The Freedom to Create</h2>
+            <h2>The Credit Card You Want</h2>
+          </div>
+          <div class="md:hidden">
+            <p class="mt-4 mb-6">
+              Build your own Credit Card that fits in your day to day lifestyle. First,
+              choose your rewards and then select your card design.
+            </p>
+            <p class="text-sm">Check if the card is available in your city</p>
+            <div>Select City</div>
+          </div>
+        </div>
+        <div class="basis-6/12 hidden md:flex">
+          <div class="flex flex-col gap-4 lg: max-w-lg">
+            <p>
+              That's why it comes with benefits & rewards chosen by you. Available in
+              multiple designs, your card comes in a style selected by you. You can come
+              back each year, to edit your benefits or update your style.
+            </p>
+            <p>
+              Your OneSync Credit Card stays true to you, year after year. It’s the only
+              card you’ll ever need.
+            </p>
+            <div class="flex items-center">
+              <a href="#" class="underline text-xl">Get Started</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29094 5.2924C8.68146 4.90188 9.31463 4.90188 9.70515 5.2924L15.7052 11.2924C16.0957 11.6829 16.0957 12.3161 15.7052 12.7066L9.70515 18.7066C9.31463 19.0971 8.68146 19.0971 8.29094 18.7066C7.90042 18.3161 7.90042 17.6829 8.29094 17.2924L13.5838 11.9995L8.29094 6.70662C7.90042 6.31609 7.90042 5.68293 8.29094 5.2924Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative">
+      <div class="container gap-32 items-center hidden md:flex">
+        <div class="basis-6/12">
+          <form class="py-14 lg:px-6 xl:px-24 ml-auto">
+            <div class="flex flex-col gap-14">
+              <div>
+                <label for="phone-number" class="hidden">Enter your phone number</label>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  class="block w-full rounded-md border-0 p-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-xl font-medium leading-6 text-gray-500 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                />
+              </div>
+              <div>
+                <label for="PAN" class="block hidden">Enter your PAN number</label>
+                <input
+                  type="number"
+                  name="PAN"
+                  placeholder="Enter your PAN number"
+                  id="lPAN"
+                  autocomplete="off"
+                  class="block w-full rounded-md border-0 p-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-xl font-medium leading-6 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+              <div>
+                <label for="email" class="block hidden">Enter your address</label>
+                <input
+                  id="email"
+                  placeholder="Enter your address"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  class="block w-full rounded-md border-0 p-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-xl font-medium leading-6 text-gray-500 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="basis-6/12">
+          <div class="flex flex-col gap-4">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_0_124)">
+                  <path
+                    d="M52 64H12C5.372 64 0 58.628 0 52V12C0 5.372 5.372 0 12 0H52C58.628 0 64 5.372 64 12V52C64 58.628 58.628 64 52 64Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M35 16H19.666C17.64 16 16 17.64 16 19.666V40.332C16 42.36 17.64 44 19.666 44H30.532C29.412 42.226 28.666 40.134 28.666 37.734V34.48C28.466 34.6 28.24 34.666 28 34.666H21.334C20.6 34.666 20 34.066 20 33.332C20 32.598 20.6 32 21.334 32H28C28.254 32 28.48 32.066 28.68 32.186C28.734 31.052 29.266 30.012 30.106 29.332H21.332C20.6 29.334 20 28.734 20 28C20 27.266 20.6 26.666 21.334 26.666H33.334C33.894 26.666 34.374 27.012 34.574 27.506L38.374 26.212C38.468 26.172 38.56 26.146 38.668 26.132V19.666C38.666 17.64 37.026 16 35 16ZM26.666 24H21.332C20.6 24 20 23.4 20 22.666C20 21.932 20.6 21.332 21.334 21.332H26.668C27.402 21.332 28.002 21.932 28.002 22.666C28.002 23.4 27.4 24 26.666 24Z"
+                    fill="#80C3FF"
+                  />
+                  <path
+                    d="M47.096 31.118L40.096 28.738C39.818 28.642 39.516 28.642 39.236 28.738L32.236 31.118C31.696 31.302 31.332 31.81 31.332 32.38V37.738C31.332 44.494 38.824 47.758 39.144 47.894C39.312 47.964 39.49 48 39.666 48C39.844 48 40.022 47.964 40.188 47.894C40.508 47.758 48 44.494 48 37.738V32.38C48 31.81 47.636 31.302 47.096 31.118ZM44.4 36.134L40.4 41.468C40.168 41.778 39.814 41.97 39.428 41.998C39.396 41.998 39.364 42 39.334 42C38.982 42 38.642 41.86 38.392 41.61L35.726 38.944C35.206 38.424 35.206 37.58 35.726 37.058C36.246 36.536 37.09 36.538 37.612 37.058L39.192 38.638L42.27 34.534C42.712 33.946 43.548 33.826 44.136 34.268C44.722 34.708 44.842 35.544 44.4 36.134Z"
+                    fill="#B3DBFF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_124">
+                    <rect width="64" height="64" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <p class="text-2xl lg:text-4xl">Fill Eligibility Form</p>
+            <p class="lg:text-xl leading-normal">
+              Tell us about yourself, to find out if you’re eligible to apply.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-50% bg-lightblue absolute h-full top-0 -z-10"></div>
+    </section>
+    <section class="md:hidden">
+      <div class="container py-10 flex flex-col items-center">
+        <p class="text-2xl mb-8">Create your own credit card in three easy steps</p>
+        <img
+          src="../images/Animation.jpg"
+          alt="fields that should be entered"
+          class="mb-4 max-h-80"
+        />
+        <div>
+          <p class="mb-4 text-lg font-medium">Fill Eligibility Form</p>
+          <p class="mb-4">
+            Please fill an application form to make sure you’re eligible for the card. You
+            can fill this later as well.
+          </p>
+          <div class="flex items-center">
+            <a href="#" class="underline text-xl font-medium">Get Started</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.29094 5.2924C8.68146 4.90188 9.31463 4.90188 9.70515 5.2924L15.7052 11.2924C16.0957 11.6829 16.0957 12.3161 15.7052 12.7066L9.70515 18.7066C9.31463 19.0971 8.68146 19.0971 8.29094 18.7066C7.90042 18.3161 7.90042 17.6829 8.29094 17.2924L13.5838 11.9995L8.29094 6.70662C7.90042 6.31609 7.90042 5.68293 8.29094 5.2924Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:bg-lightpink md:py-16">
+      <div
+        class="container flex flex-col-reverse md:grid md:grid-cols-2 md:gap-x-32 justify-items-start"
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            class="hidden md:block"
+          >
+            <g clip-path="url(#clip0_0_79)">
+              <path
+                d="M52 64H12C5.372 64 0 58.628 0 52V12C0 5.372 5.372 0 12 0H52C58.628 0 64 5.372 64 12V52C64 58.628 58.628 64 52 64Z"
+                fill="#FFE4E7"
+              />
+              <path
+                d="M37.442 24.576L36.868 28.176C36.806 28.554 36.968 28.934 37.282 29.152C37.452 29.272 37.654 29.332 37.854 29.332C38.02 29.332 38.188 29.29 38.34 29.206L41.352 27.528L44.376 29.184C44.71 29.368 45.122 29.346 45.436 29.122C45.748 28.9 45.906 28.52 45.844 28.142L45.244 24.546L47.716 21.998C47.978 21.73 48.066 21.336 47.946 20.982C47.826 20.626 47.518 20.368 47.146 20.314L43.756 19.808L42.22 16.57C42.058 16.222 41.706 16 41.32 16C41.318 16 41.318 16 41.316 16C40.93 16.002 40.576 16.226 40.414 16.578L38.9 19.826L35.512 20.354C35.142 20.412 34.834 20.672 34.718 21.028C34.6 21.384 34.692 21.776 34.954 22.042L37.442 24.576Z"
+                fill="#FF808E"
+              />
+              <path
+                d="M47.1481 38.984L43.7581 38.478L42.2221 35.24C42.0561 34.892 41.7061 34.668 41.3181 34.668C41.3161 34.668 41.3161 34.668 41.3141 34.668C40.9281 34.67 40.5741 34.894 40.4121 35.246L38.8981 38.494L35.5101 39.022C35.1401 39.08 34.8321 39.34 34.7161 39.696C34.5981 40.052 34.6901 40.444 34.9521 40.71L37.4421 43.242L36.8681 46.842C36.8061 47.22 36.9681 47.6 37.2821 47.818C37.4521 47.938 37.6541 47.998 37.8541 47.998C38.0201 47.998 38.1881 47.956 38.3401 47.872L41.3521 46.194L44.3761 47.85C44.7101 48.034 45.1221 48.01 45.4361 47.788C45.7481 47.566 45.9061 47.186 45.8441 46.808L45.2441 43.212L47.7161 40.664C47.9781 40.396 48.0661 40.002 47.9461 39.648C47.8261 39.296 47.5181 39.038 47.1481 38.984Z"
+                fill="#FF808E"
+              />
+              <path
+                d="M30.334 34.334H27.668C27.116 34.334 26.668 33.886 26.668 33.334C26.668 32.782 27.116 32.334 27.668 32.334H30.334C30.886 32.334 31.334 32.782 31.334 33.334C31.334 33.886 30.886 34.334 30.334 34.334Z"
+                fill="#FFB3BB"
+              />
+              <path
+                d="M33.666 44H30.332C29.78 44 29.332 43.552 29.332 43V25C29.332 24.448 29.78 24 30.332 24H33.666C34.218 24 34.666 24.448 34.666 25C34.666 25.552 34.218 26 33.666 26H31.332V42H33.666C34.218 42 34.666 42.448 34.666 43C34.666 43.552 34.218 44 33.666 44Z"
+                fill="#FFB3BB"
+              />
+              <path
+                d="M21.334 32C19.864 32 18.668 30.804 18.668 29.334C18.668 27.864 19.864 26.668 21.334 26.668C22.804 26.668 24 27.864 24 29.334C24 30.804 22.804 32 21.334 32Z"
+                fill="#FF808E"
+              />
+              <path
+                d="M25.666 38.666H17C16.448 38.666 16 38.218 16 37.666V37C16 34.978 17.644 33.334 19.666 33.334H23C25.022 33.334 26.666 34.978 26.666 37V37.666C26.666 38.218 26.218 38.666 25.666 38.666Z"
+                fill="#FF808E"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_79">
+                <rect width="64" height="64" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="text-2xl lg:text-4xl mt-4">Choose Your Rewards</p>
+          <p class="lg:text-xl leading-relaxed mt-4">
+            Match your card to your lifestyle. We’ve got benefits from across brands &
+            categories for you to choose from. Each benefit has an attached fee. Just add
+            the ones you like to your card.
+          </p>
+          <div class="flex items-center mt-4 md:hidden">
+            <a href="#" class="underline text-xl font-medium">Get Started</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.29094 5.2924C8.68146 4.90188 9.31463 4.90188 9.70515 5.2924L15.7052 11.2924C16.0957 11.6829 16.0957 12.3161 15.7052 12.7066L9.70515 18.7066C9.31463 19.0971 8.68146 19.0971 8.29094 18.7066C7.90042 18.3161 7.90042 17.6829 8.29094 17.2924L13.5838 11.9995L8.29094 6.70662C7.90042 6.31609 7.90042 5.68293 8.29094 5.2924Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="container slider bg-lightpink py-8 md:py-0">
+          <div
+            class="slide-track grid grid-rows-1 grid-cols-6 overflow-hidden gap-x-96 justify-items-center"
+          >
+            <div
+              class="slide-1 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-2.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide-2 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-1.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide-3 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-3.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide-4 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-2.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide-5 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-1.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="slide-6 rounded-3xl min-w-80 relative h-96 bg-[url('../images/card-3.jpeg')] bg-cover"
+            >
+              <div>
+                <div class="flex items-center px-4 py-8 gap-6 absolute bottom-0">
+                  <img src="../images/icon-logo.svg" alt="" />
+                  <p class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                    Buy 1 Get 1 Movie Ticket
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:bg-lightpurple">
+      <div class="container block md:grid md:grid-cols-2 gap-32 py-16 items-center">
+        <div class="bg-lightpurple p-8">
+          <img src="../images/gray.png" alt="" class="mx-auto" />
+        </div>
+        <div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              class="hidden md:block"
+            >
+              <g clip-path="url(#clip0_0_70)">
+                <path
+                  d="M52 64H12C5.37207 64 0 58.6279 0 52V12C0 5.37207 5.37207 0 12 0H52C58.6279 0 64 5.37207 64 12V52C64 58.6279 58.6279 64 52 64Z"
+                  fill="white"
+                />
+                <path
+                  d="M39 16H19.666C17.644 16 16 17.644 16 19.666V24.332C16 26.356 17.644 28 19.666 28H39C41.022 28 42.666 26.356 42.666 24.334V19.668C42.666 17.644 41.022 16 39 16Z"
+                  fill="#CCB3FF"
+                />
+                <path
+                  d="M44.666 20.666H42.666V23.332H44.666C45.0342 23.332 45.332 23.6299 45.332 23.998V29.998C45.332 30.3662 45.0322 30.6641 44.666 30.6641H31.332C29.126 30.6641 27.332 32.458 27.332 34.6641V36H30V34.666C30 33.9321 30.5981 33.332 31.334 33.332H44.668C46.5059 33.334 48 31.8379 48 30V24C48 22.1621 46.5059 20.666 44.666 20.666Z"
+                  fill="#E0D1FF"
+                />
+                <path
+                  d="M31 36H26.334C25.0459 36 24 37.0459 24 38.334V45.668C24 46.9541 25.0459 48 26.334 48H31C32.2861 48 33.334 46.9541 33.334 45.666V38.332C33.334 37.0459 32.2861 36 31 36Z"
+                  fill="#CCB3FF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_0_70">
+                  <rect width="64" height="64" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="text-2xl lg:text-4xl mt-4">Select Your Style</p>
+            <p class="lg:text-xl leading-relaxed mt-4">
+              Match your card to your personality. Whether you like a minimal look or
+              something that catches everyone’s eyes, we’ve got a style for you. You can
+              update your style every year, for a small fee.
+            </p>
+            <div class="flex items-center mt-4 md:hidden">
+              <a href="#" class="underline text-xl font-medium">Get Started</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29094 5.2924C8.68146 4.90188 9.31463 4.90188 9.70515 5.2924L15.7052 11.2924C16.0957 11.6829 16.0957 12.3161 15.7052 12.7066L9.70515 18.7066C9.31463 19.0971 8.68146 19.0971 8.29094 18.7066C7.90042 18.3161 7.90042 17.6829 8.29094 17.2924L13.5838 11.9995L8.29094 6.70662C7.90042 6.31609 7.90042 5.68293 8.29094 5.2924Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-20">
+      <div class="container">
+        <p class="text-4xl text-center mt-20 mb-8">FAQs</p>
+        <div>
+          <div class="mx-auto lg:px-40 flex flex-col gap-4">
+            <div>
+              <div class="p-4 accordion-header flex justify-between cursor-pointer">
+                <span class="font-medium text-xl text-salmon"
+                  >Who’s eligible for the Card?
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#F2707C"
+                  class="h-6 w-6 arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-in border-b"
+              >
+                <div class="p-4">
+                  <p>
+                    If you’re between 23-60 years of age, have a monthly income of ₹25,000
+                    or more, and have never defaulted on a credit card or loan payment,
+                    we’d encourage you to apply. However, your application will be
+                    declined if your location isn’t serviceable or if your credit score is
+                    low.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="p-4 accordion-header flex justify-between cursor-pointer">
+                <span class="font-medium text-xl text-salmon"
+                  >Is my location serviceable?
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#F2707C"
+                  class="h-6 w-6 arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-in border-b"
+              >
+                <div class="p-4">
+                  <p>
+                    If you’re between 23-60 years of age, have a monthly income of ₹25,000
+                    or more, and have never defaulted on a credit card or loan payment,
+                    we’d encourage you to apply. However, your application will be
+                    declined if your location isn’t serviceable or if your credit score is
+                    low.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="p-4 accordion-header flex justify-between cursor-pointer">
+                <span class="font-medium text-xl text-salmon"
+                  >What if I don't want to pay at all?
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#F2707C"
+                  class="h-6 w-6 arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-in border-b"
+              >
+                <div class="p-4">
+                  <p>
+                    If you’re between 23-60 years of age, have a monthly income of ₹25,000
+                    or more, and have never defaulted on a credit card or loan payment,
+                    we’d encourage you to apply. However, your application will be
+                    declined if your location isn’t serviceable or if your credit score is
+                    low.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="p-4 accordion-header flex justify-between cursor-pointer">
+                <span class="font-medium text-xl text-salmon"
+                  >What hapens after I've build my card?
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="#F2707C"
+                  class="h-6 w-6 arrow"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-body max-h-0 overflow-hidden transition-all duration-300 ease-in border-b"
+              >
+                <div class="p-4">
+                  <p>
+                    If you’re between 23-60 years of age, have a monthly income of ₹25,000
+                    or more, and have never defaulted on a credit card or loan payment,
+                    we’d encourage you to apply. However, your application will be
+                    declined if your location isn’t serviceable or if your credit score is
+                    low.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-darkblue">
+      <div class="container text-white border-b">
+        <div class="py-16 flex flex-col items-center">
+          <p class="text-3xl mb-2">OneSync Credit Card</p>
+          <p>Experience Freedom</p>
+          <button
+            class="mt-12 px-10 py-2 bg-lavender rounded-full hover:text-gray-800 hover:bg-lightpurple"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="container py-16 grid md:grid-cols-4">
+        <div class="text-white flex flex-col gap-4">
+          <a href="#">Manage Your Card</a>
+          <a href="#">Track Your Application</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="text-white flex-col gap-4 hidden md:flex">
+          <a href="#">Manage Your Card</a>
+          <a href="#">Track Your Application</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="text-white flex-col gap-4 hidden md:flex">
+          <a href="#">Manage Your Card</a>
+          <a href="#">Track Your Application</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="text-white flex-col gap-4 hidden md:flex">
+          <a href="#">Manage Your Card</a>
+          <a href="#">Track Your Application</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <script src="../mobile-menu.js"></script>
+  </body>
+</html>
